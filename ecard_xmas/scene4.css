@@ -1,0 +1,61 @@
+/***************
+MAIN SVG ELEMENT
+****************/
+svg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/**MASTER CONTROLS**/
+#Left {
+    cursor: pointer;
+}
+
+#plus {
+    display: none;
+}
+
+#Elsa {
+    transform: translate(-550px);
+    cursor: pointer;
+    opacity: 0;
+}
+
+/***Christmas Tree Elements***/
+#Star_1_, #Bot, #Bot_x5F_mid_x5F_section2, #Bot_x5F_mid_x5F_section1, #Mid_1_, #Top_x5F_Mid, #Top_Deco, #Gift {
+    opacity: 0;
+}
+
+/***Room Decorations***/
+#Strap, #Bell1_1_, #Bell2, #Stocking1, #Stocking2_1_, #Stocking3, #Fire_x5F_deco, #Circle_x5F_Tree, #bow, #CandyCane {
+    opacity: 0;
+}
+
+#fire {
+    opacity: 0;
+}
+
+audio {
+    display: none;
+}
+
+img {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+}
+
+#Box_1_, #Box_2_, #Box_3_ {
+    cursor: default;
+}

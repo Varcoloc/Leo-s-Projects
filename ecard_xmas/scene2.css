@@ -1,0 +1,50 @@
+/***************
+MAIN SVG ELEMENT
+****************/
+svg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+/**MASTER CONTROLS**/
+#Left, #Right {
+    cursor: pointer;
+}
+
+#Anna {
+    transform: translate(550px);
+    cursor: pointer;
+    opacity: 0;
+}
+
+#Clouds {
+    transform: translate(300px) scale(0.9);
+    opacity: 0;
+    animation: cloudmove 6s infinite;
+    cursor: pointer;
+}
+
+#Snowfall {
+    opacity: 0;
+    animation: snowfall 0.15s infinite;
+}
+
+audio {
+    display: none;
+}
+
+@keyframes cloudmove {
+    0% {transform: translate(100px);}
+    50% {opacity: 1;}
+    100% {transform: translate(-100px)}
+}
+
+@keyframes snowfall {
+    0% {transform: translate(0px, -200px);}
+    100% {transform: translate(0px, 150px);}
+}
